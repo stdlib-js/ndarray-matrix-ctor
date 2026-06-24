@@ -45,32 +45,20 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/ndarray-matrix-ctor
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var matrix = require( '@stdlib/ndarray-matrix-ctor' );
+import matrix from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-matrix-ctor@esm/index.mjs';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-matrix-ctor@esm/index.mjs';
 ```
 
 #### matrix( \[dtype]\[, options] )
@@ -78,8 +66,8 @@ var matrix = require( '@stdlib/ndarray-matrix-ctor' );
 Returns a two-dimensional [ndarray][@stdlib/ndarray/ctor] having a specified [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
-var getDType = require( '@stdlib/ndarray-dtype' );
-var getShape = require( '@stdlib/ndarray-shape' );
+import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
+import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
 
 var arr = matrix();
 // returns <ndarray>
@@ -94,8 +82,8 @@ var dt = String( getDType( arr ) );
 By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [`float64`][@stdlib/ndarray/dtypes] data type. To specify an alternative [data type][@stdlib/ndarray/dtypes], provide a `dtype` argument.
 
 ```javascript
-var getDType = require( '@stdlib/ndarray-dtype' );
-var getShape = require( '@stdlib/ndarray-shape' );
+import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
+import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
 
 var arr = matrix( 'int32' );
 // returns <ndarray>
@@ -119,7 +107,7 @@ The function accepts the following options:
 Returns a two-dimensional [ndarray][@stdlib/ndarray/ctor] having a specified shape.
 
 ```javascript
-var getShape = require( '@stdlib/ndarray-shape' );
+import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
 
 var arr1 = matrix( 5, 5 );
 // returns <ndarray>
@@ -139,7 +127,7 @@ var sh2 = getShape( arr2 );
 Returns a two-dimensional [ndarray][@stdlib/ndarray/ctor] having a specified shape.
 
 ```javascript
-var getShape = require( '@stdlib/ndarray-shape' );
+import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
 
 var arr1 = matrix( [ 5, 5 ] );
 // returns <ndarray>
@@ -159,7 +147,7 @@ var sh2 = getShape( arr2 );
 Creates a two-dimensional [ndarray][@stdlib/ndarray/ctor] from an array-like object or iterable.
 
 ```javascript
-var getShape = require( '@stdlib/ndarray-shape' );
+import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
 
 var arr1 = matrix( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
 // returns <ndarray>
@@ -181,9 +169,9 @@ If `obj` is an array-like object, the value must be a nested array (i.e., an arr
 Returns a two-dimensional [ndarray][@stdlib/ndarray/ctor] view of an [`ArrayBuffer`][@stdlib/array/buffer].
 
 ```javascript
-var ArrayBuffer = require( '@stdlib/array-buffer' );
-var getDType = require( '@stdlib/ndarray-dtype' );
-var getShape = require( '@stdlib/ndarray-shape' );
+import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
+import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
 
 var buf = new ArrayBuffer( 32 );
 
@@ -247,9 +235,9 @@ var dt6 = String( getDType( arr6 ) );
 Returns a two-dimensional [ndarray][@stdlib/ndarray/ctor] view of an [`ArrayBuffer`][@stdlib/array/buffer].
 
 ```javascript
-var ArrayBuffer = require( '@stdlib/array-buffer' );
-var getDType = require( '@stdlib/ndarray-dtype' );
-var getShape = require( '@stdlib/ndarray-shape' );
+import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
+import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
 
 var buf = new ArrayBuffer( 32 );
 
@@ -277,8 +265,8 @@ var dt2 = String( getDType( arr2 ) );
 Returns a function for creating a two-dimensional [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
-var getDType = require( '@stdlib/ndarray-dtype' );
-var getShape = require( '@stdlib/ndarray-shape' );
+import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
+import getShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-shape@esm/index.mjs';
 
 var Float32Matrix = matrix.factory( 'float32' );
 
@@ -333,15 +321,20 @@ When providing options to the returned function, the provided option values over
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var discreteUniform = require( '@stdlib/random-discrete-uniform' );
-var cartesianProduct = require( '@stdlib/array-cartesian-product' );
-var unzip = require( '@stdlib/utils-unzip' );
-var dtypes = require( '@stdlib/ndarray-dtypes' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-var sum = require( '@stdlib/blas-ext-sum' );
-var logEachMap = require( '@stdlib/console-log-each-map' );
-var matrix = require( '@stdlib/ndarray-matrix-ctor' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-discrete-uniform@esm/index.mjs';
+import cartesianProduct from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-cartesian-product@esm/index.mjs';
+import unzip from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-unzip@esm/index.mjs';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
+import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
+import sum from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-sum@esm/index.mjs';
+import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
+import matrix from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-matrix-ctor@esm/index.mjs';
 
 // Create an array of random shapes:
 var shapes = discreteUniform( [ 10, 2 ], 2, 8, {
@@ -366,6 +359,10 @@ function clbk( shape, dtype ) {
 
 // Apply the callback and print the results:
 logEachMap( 'shape: [%3s]. dtype: %7s. sum: %d.', args[ 0 ], args[ 1 ], clbk );
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -397,7 +394,7 @@ logEachMap( 'shape: [%3s]. dtype: %7s. sum: %d.', args[ 0 ], args[ 1 ], clbk );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -460,11 +457,11 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-matrix-ctor/main/LICENSE
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/esm
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/esm
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/esm
 
 </section>
 
