@@ -423,6 +423,18 @@ logEachMap( 'shape: [%3s]. dtype: %7s. sum: %d.', args[ 0 ], args[ 1 ], clbk );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/ndarray-matrix/float64`][@stdlib/ndarray/matrix/float64]</span><span class="delimiter">: </span><span class="description">create a double-precision floating-point matrix (i.e., a two-dimensional ndarray).</span>
+-   <span class="package-name">[`@stdlib/ndarray-matrix/float32`][@stdlib/ndarray/matrix/float32]</span><span class="delimiter">: </span><span class="description">create a single-precision floating-point matrix (i.e., a two-dimensional ndarray).</span>
+-   <span class="package-name">[`@stdlib/ndarray-matrix/int32`][@stdlib/ndarray/matrix/int32]</span><span class="delimiter">: </span><span class="description">create a 32-bit signed integer matrix (i.e., a two-dimensional ndarray).</span>
+-   <span class="package-name">[`@stdlib/ndarray-matrix/complex128`][@stdlib/ndarray/matrix/complex128]</span><span class="delimiter">: </span><span class="description">create a double-precision complex floating-point matrix (i.e., a two-dimensional ndarray).</span>
+-   <span class="package-name">[`@stdlib/ndarray-matrix/complex64`][@stdlib/ndarray/matrix/complex64]</span><span class="delimiter">: </span><span class="description">create a single-precision complex floating-point matrix (i.e., a two-dimensional ndarray).</span>
+-   <span class="package-name">[`@stdlib/ndarray-vector/ctor`][@stdlib/ndarray/vector/ctor]</span><span class="delimiter">: </span><span class="description">create a vector (i.e., a one-dimensional ndarray).</span>
+-   <span class="package-name">[`@stdlib/ndarray-ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+
 </section>
 
 <!-- /.related -->
@@ -504,6 +516,22 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
+
+<!-- <related-links> -->
+
+[@stdlib/ndarray/matrix/float64]: https://github.com/stdlib-js/ndarray-matrix-float64
+
+[@stdlib/ndarray/matrix/float32]: https://github.com/stdlib-js/ndarray-matrix-float32
+
+[@stdlib/ndarray/matrix/int32]: https://github.com/stdlib-js/ndarray-matrix-int32
+
+[@stdlib/ndarray/matrix/complex128]: https://github.com/stdlib-js/ndarray-matrix-complex128
+
+[@stdlib/ndarray/matrix/complex64]: https://github.com/stdlib-js/ndarray-matrix-complex64
+
+[@stdlib/ndarray/vector/ctor]: https://github.com/stdlib-js/ndarray-vector-ctor
+
+<!-- </related-links> -->
 
 </section>
 
