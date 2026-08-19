@@ -20,7 +20,7 @@
 
 /* eslint-disable @typescript-eslint/unified-signatures, max-lines */
 
-/// <reference types="@stdlib/types"/>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
 import { DataTypeMap, TypedDataTypeMap, Order, Mode, Shape2D } from '@stdlib/types/ndarray';
 import { ArrayLike, Collection, AccessorArrayLike } from '@stdlib/types/array';
