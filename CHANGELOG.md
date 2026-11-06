@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-31)
+## Unreleased (2026-11-06)
 
 <section class="features">
 
@@ -45,6 +45,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`d87ead6`](https://github.com/stdlib-js/stdlib/commit/d87ead6d0f8f86d8bb4b09da50c6088c34278195) - **docs:** rename variable _(by Athan Reines)_
 -   [`5f1e253`](https://github.com/stdlib-js/stdlib/commit/5f1e2532583d201353eae6288d960850a2f49cde) - **refactor:** use external utility _(by Athan Reines)_
 -   [`c21221c`](https://github.com/stdlib-js/stdlib/commit/c21221c1a4ec8709eaca86aa5acc984e4aafda6d) - **fix:** add missing option validation [(#14966)](https://github.com/stdlib-js/stdlib/pull/14966) _(by JoyBoy, Athan Reines)_
 -   [`f449b5c`](https://github.com/stdlib-js/stdlib/commit/f449b5c1784f60ab3322393dc3e51ad497ce12d2) - **docs:** update related packages sections [(#13381)](https://github.com/stdlib-js/stdlib/pull/13381) _(by stdlib-bot)_
