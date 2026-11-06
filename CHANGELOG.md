@@ -45,6 +45,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`737b1e3`](https://github.com/stdlib-js/stdlib/commit/737b1e35c49adc276baa4fef67bc7c7d5e6af21d) - **docs:** remove stray parenthesis [(#16521)](https://github.com/stdlib-js/stdlib/pull/16521) _(by Philipp Burckhardt)_
 -   [`d87ead6`](https://github.com/stdlib-js/stdlib/commit/d87ead6d0f8f86d8bb4b09da50c6088c34278195) - **docs:** rename variable _(by Athan Reines)_
 -   [`5f1e253`](https://github.com/stdlib-js/stdlib/commit/5f1e2532583d201353eae6288d960850a2f49cde) - **refactor:** use external utility _(by Athan Reines)_
 -   [`c21221c`](https://github.com/stdlib-js/stdlib/commit/c21221c1a4ec8709eaca86aa5acc984e4aafda6d) - **fix:** add missing option validation [(#14966)](https://github.com/stdlib-js/stdlib/pull/14966) _(by JoyBoy, Athan Reines)_
